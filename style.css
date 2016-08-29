@@ -1,0 +1,307 @@
+@font-face {
+	font-family: "MaisonNeue";
+	src: url('fonts/MaisonNeueWEB-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MaisonNeueBook";
+	src: url('fonts/MaisonNeueWEB-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #FEFEFE;
+	max-width: 1440px;
+	margin: auto;
+	font-family: "MaisonNeue";
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	color: #292929;
+}
+
+/* top */
+
+.logo {
+	width: 40%;
+	float: left;
+	margin-left: 7.5%; 
+	margin-top: 30px;
+	font-family: "MaisonNeueBook";
+}
+
+.title {
+	width: 40%;
+	float: left;
+	margin-top: -10px;
+	color: #9d9d9d;
+	margin-left: 7.5%; 
+}
+
+/* nav */
+
+ul {
+	list-style-type: none;
+	font-family: "MaisonNeue";
+	font-size: 16px;
+	margin-left: 5%;
+	margin-top: 30px;
+	padding: 0;
+	text-decoration: none;
+	float: left;
+}
+
+li {
+	display: inline;
+	margin-right: 20px;
+}
+
+li a {
+	text-decoration: none;
+	color: #9d9d9d;
+	font-family: "MaisonNeue";
+	font-size: 16px;
+	transition: all 300ms ease-in-out;
+}
+
+li a:visited {
+	color: #9d9d9d;
+}
+
+li a:hover {
+	color: #292929;
+}
+
+li a.active {
+	color: #292929;
+}
+
+/* grid */
+
+#main {
+	padding-top: 125px;
+	padding-bottom: 150px;
+}
+
+div.left {
+	width: 40%;
+	margin: 2.5% 2.5% 2.5% 7.5%;
+	float: left;
+}
+
+div.right {
+	width: 40%;
+	margin: 2.5% 7.5% 2.5% 2.5%;
+	float: right;
+}
+
+div.left img {
+    width: 100%;
+    height: auto;
+}
+
+div.right img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+	font-family: "MaisonNeueBook";
+	text-decoration: none;
+	font-size: 16px;
+	color: #292929;	
+	margin-top: 5px;
+}
+
+.second {
+	font-family: "MaisonNeue";
+	text-decoration: none;
+	font-size: 16px;
+	color: #9d9d9d;
+	margin-top: 6px;
+}
+
+#f-left {
+    margin-top: 65px;
+    color: #9d9d9d;
+}
+
+#f-right {
+    margin-top: 65px;
+    color: #9d9d9d;
+}
+
+/*Chrome, Safari*/
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: none
+	}
+}
+
+/*Standard syntax*/
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: none
+	}
+}
+
+/*Chrome, Safari*/
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/*Standard syntax*/
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.container {
+	animation-duration: 0.5s;
+	transition-timing-function: ease-in;
+	animation-name: fadeInUp;
+}
+
+header {
+	animation-duration: 0.5s;
+	transition-timing-function: ease-in;
+	animation-name: fadeIn;
+}
+
+.wrapper {
+	background-color: #FEFEFE;
+	transition: background-color ease-in-out 0.8s;
+}
+
+.wrapper.home {
+	background-color: #FEFEFE;
+}
+
+.wrapper.about {
+	background-color: #161616;
+}
+
+
+/* responsive 768px */
+
+@media all and (min-width : 320px) and (max-width : 768px) {
+    #main {
+	padding-top: 140px;
+	}	
+
+    #nav ul {
+        text-align: left;
+        float: right;
+        padding-right: 5%;
+    }
+    div.left {
+        margin: 0 auto;
+        width: 85%;
+        padding: 7.5%;
+        padding-top: 5px;
+    }
+    div.right {
+    	margin: 0 auto;
+        width: 85%;
+        padding: 7.5%;
+        padding-top: 5px;
+    }
+	#f-left {
+    	max-width: 35%;
+    	float: left;
+    	padding-bottom: 25px;
+	}
+	#f-right {
+    	max-width: 30%;
+    	float: right;
+    	text-align: right;
+    	padding-bottom: 25px;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    * {
+		letter-spacing: 0.8px;
+		font-size: 40px;
+	}
+	
+	.logo {
+		margin-top: 80px;
+		width: 49%;
+	}
+
+	.title {
+		margin-top: -20px;
+		width: 100%;
+    }
+	
+    li a {
+	font-size: 40px;
+	float: left;
+	display: inline;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-top: 47px;
+	}
+
+	.desc {
+		font-size: 40px;
+	}
+	
+	.second {
+		font-size: 40px;
+		margin-top: 15px;
+	}
+
+    div.left {
+        margin: 0 auto;
+        width: 92.5%;
+        padding: 7.5%;
+        font
+    }
+    div.right {
+    	margin: 0 auto;
+        width: 92.5%;
+        padding: 7.5%;
+        float: left;
+    }
+	#f-left {
+    	max-width: 35%;
+    	float: left;
+	}
+	#f-right {
+    	max-width: 30%;
+    	float: right;
+    	text-align: right;
+    	padding-right: 0px;
+	}
+}
+

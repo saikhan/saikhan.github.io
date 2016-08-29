@@ -1,0 +1,307 @@
+@font-face {
+	font-family: "MaisonNeue";
+	src: url('fonts/MaisonNeueWEB-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MaisonNeueBook";
+	src: url('fonts/MaisonNeueWEB-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #161616;
+	max-width: 1440px;
+	margin: auto;
+	font-family: "MaisonNeue";
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	color: #AAAAAA;
+}
+
+
+/* top */
+
+.logo {
+	width: 40%;
+	float: left;
+	margin-left: 7.5%; 
+	margin-top: 30px;
+	font-family: "MaisonNeueBook";
+	color: #FFFFFF;
+}
+
+.title {
+	width: 40%;
+	float: left;
+	margin-top: -10px;
+	color: #9d9d9d;
+	margin-left: 7.5%; 
+}
+
+/* nav */
+
+ul {
+	list-style-type: none;
+	font-family: "MaisonNeue";
+	font-size: 16px;
+	margin-left: 5%;
+	margin-top: 30px;
+	padding: 0;
+	text-decoration: none;
+	float: left;
+}
+
+li {
+	display: inline;
+	margin-right: 20px;
+}
+
+li a {
+	text-decoration: none;
+	color: #9d9d9d;
+	font-family: "MaisonNeue";
+	font-size: 16px;
+	transition: all 300ms ease-in-out;
+}
+
+li a:visited {
+	color: #9d9d9d;
+}
+
+li a:hover {
+	color: #FFFFFF;
+}
+
+li a.active {
+	color: #FFFFFF;
+}
+
+/* grid */
+
+.container {
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+
+div.left {
+	width: 40%;
+	margin: 2.5% 2.5% 2.5% 7.5%;
+	float: left;
+}
+
+div.left p {
+	line-height: 30px
+}
+
+div.right {
+	width: 40%;
+	margin: 2.5% 7.5% 2.5% 2.5%;
+	float: right;
+}
+
+p a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: "MaisonNeue";
+	font-size: 16px;
+	transition: all 300ms ease-in-out;
+}
+
+p a:hover:not(.active) {
+	color: #AAAAAA;
+}
+
+.span {
+	color: #FFFFFF;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+div.left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+
+.left li a {
+    display: block;
+    line-height: 15px;
+    margin-top: -5px;
+    color: #AAAAAA;
+}
+
+.left li a:hover {
+	color: #FFFFFF;
+}
+
+/* Animations */
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: none
+	}
+}
+
+/*Standard syntax*/
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: none
+	}
+}
+
+/*Chrome, Safari*/
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/*Standard syntax*/
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.container {
+	animation-duration: 0.5s;
+	transition-timing-function: ease-in;
+	animation-name: fadeInUp;
+}
+
+header {
+	animation-duration: 0.5s;
+	transition-timing-function: ease-in;
+	animation-name: fadeIn;
+}
+
+.wrapper {
+	background-color: #FEFEFE;
+	transition: background-color ease-in-out 0.8s;
+}
+
+.wrapper.home {
+	background-color: #FEFEFE;
+}
+
+.wrapper.about {
+	background-color: #161616;
+}
+
+/* responsive 768px */
+
+@media all and (max-width : 768px) {
+    #nav ul {
+        text-align: left;
+        float: right;
+        padding-right: 5%;
+    }
+    div.left {
+        margin: 0 auto;
+        width: 85%;
+        padding: 7.5%;
+    }
+    div.right {
+    	margin: 0 auto;
+        width: 85%;
+        padding: 7.5%;
+    }
+}
+
+/* mobile */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    * {
+		letter-spacing: 0.8px;
+		font-size: 40px;
+	}
+	
+	.logo {
+		margin-top: 80px;
+		width: 49%;
+	}
+
+	.title {
+		margin-top: -20px;
+		width: 100%;
+    }
+	
+    li a {
+		font-size: 40px;
+		float: left;
+		display: inline;
+		padding-right: 30px;
+		padding-left: 30px;
+		margin-top: 47px;
+	}
+
+	div.left ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	margin-top: 10px;
+	}	 
+
+	.left li a {
+		display: block;
+    	line-height: 30px;
+    	margin-top: -5px;
+    	float: none;
+    	font-size: 40px;
+    	padding: 0px;
+	}
+
+	.container p {
+		font-size: 20px;
+		font-family: "MaisonNeue";
+	}
+
+	div.left p {
+		line-height: 70px;
+	}
+
+	.span {
+		font-size: 20px;
+		margin-bottom: 20px;
+		margin-top: 0px;
+	}
+
+    div.left {
+        margin: 0 auto;
+        width: 92.5%;
+        padding: 7.5%;
+        font
+    }
+    div.right {
+    	margin: 0 auto;
+        width: 92.5%;
+        padding: 7.5%;
+        float: left;
+    }
+}
