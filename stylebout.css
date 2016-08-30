@@ -261,6 +261,10 @@ header {
 		margin-top: 47px;
 	}
 
+	p a {
+		font-size: 40px;
+	}
+
 	div.left ul {
     	list-style-type: none;
     	margin: 0;
@@ -288,7 +292,7 @@ header {
 
 	.span {
 		font-size: 40px;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 		margin-top: 0px;
 	}
 
@@ -296,8 +300,8 @@ header {
         margin: 0 auto;
         width: 92.5%;
         padding: 7.5%;
-        font
     }
+
     div.right {
     	margin: 0 auto;
         width: 92.5%;
