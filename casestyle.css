@@ -255,7 +255,7 @@ header {
 	line-height: 70px;
 	}
 	ul {
-		font-size: 36px;
+		font-size: 40px;
 	}
 	.logo {
 		margin-top: 65px;
@@ -297,11 +297,11 @@ header {
     }
 
     div.right p {
-        font-size: 15px;
+        font-size: 40px;
 	}
 
 	div.back a {
-		font-size: 15px;
+		font-size: 40px;
 	}
 
 	.image img {
