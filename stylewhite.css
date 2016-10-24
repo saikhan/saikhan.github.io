@@ -13,15 +13,14 @@
 }
 
 body {
-	background-color: #161616;
+	background-color: #FEFEFE;
 	max-width: 1440px;
 	margin: auto;
 	font-family: "MaisonNeue";
 	font-size: 16px;
 	letter-spacing: 0.5px;
-	color: #AAAAAA;
+	color: #292929;
 }
-
 
 /* top */
 
@@ -31,7 +30,6 @@ body {
 	margin-left: 7.5%; 
 	margin-top: 30px;
 	font-family: "MaisonNeueBook";
-	color: #FFFFFF;
 }
 
 .title {
@@ -73,17 +71,17 @@ li a:visited {
 }
 
 li a:hover {
-	color: #FFFFFF;
+	color: #292929;
 }
 
 li a.active {
-	color: #FFFFFF;
+	color: #292929;
 }
 
 /* grid */
 
-.container {
-	padding-top: 100px;
+#main {
+	padding-top: 125px;
 	padding-bottom: 150px;
 }
 
@@ -93,52 +91,49 @@ div.left {
 	float: left;
 }
 
-div.left p {
-	line-height: 30px
-}
-
 div.right {
 	width: 40%;
 	margin: 2.5% 7.5% 2.5% 2.5%;
 	float: right;
 }
 
-p a {
+div.left img {
+    width: 100%;
+    height: auto;
+}
+
+div.right img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+	font-family: "MaisonNeueBook";
 	text-decoration: none;
-	color: #FFFFFF;
-	font-family: "MaisonNeue";
 	font-size: 16px;
-	transition: all 300ms ease-in-out;
+	color: #292929;	
+	margin-top: 5px;
 }
 
-p a:hover:not(.active) {
-	color: #AAAAAA;
+.second {
+	font-family: "MaisonNeue";
+	text-decoration: none;
+	font-size: 16px;
+	color: #9d9d9d;
+	margin-top: 6px;
 }
 
-.span {
-	color: #FFFFFF;
-	margin-top: 0px;
-	margin-bottom: 5px;
+#f-left {
+    margin-top: 65px;
+    color: #9d9d9d;
 }
 
-div.left ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-} 
-
-.left li a {
-    display: block;
-    line-height: 15px;
-    margin-top: -5px;
-    color: #AAAAAA;
+#f-right {
+    margin-top: 65px;
+    color: #9d9d9d;
 }
 
-.left li a:hover {
-	color: #FFFFFF;
-}
-
-/* Animations */
+/*Chrome, Safari*/
 
 @-webkit-keyframes fadeInUp {
 	0% {
@@ -211,9 +206,14 @@ header {
 	background-color: #161616;
 }
 
+
 /* responsive 768px */
 
-@media all and (max-width : 768px) {
+@media all and (min-width : 320px) and (max-width : 768px) {
+    #main {
+	padding-top: 140px;
+	}	
+
     #nav ul {
         text-align: left;
         float: right;
@@ -223,15 +223,26 @@ header {
         margin: 0 auto;
         width: 85%;
         padding: 7.5%;
+        padding-top: 5px;
     }
     div.right {
     	margin: 0 auto;
         width: 85%;
         padding: 7.5%;
+        padding-top: 5px;
     }
+	#f-left {
+    	max-width: 35%;
+    	float: left;
+    	padding-bottom: 25px;
+	}
+	#f-right {
+    	max-width: 30%;
+    	float: right;
+    	text-align: right;
+    	padding-bottom: 25px;
+	}
 }
-
-/* mobile */
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -253,59 +264,44 @@ header {
     }
 	
     li a {
+	font-size: 40px;
+	float: left;
+	display: inline;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-top: 47px;
+	}
+
+	.desc {
 		font-size: 40px;
-		float: left;
-		display: inline;
-		padding-right: 30px;
-		padding-left: 30px;
-		margin-top: 47px;
 	}
-
-	p a {
+	
+	.second {
 		font-size: 40px;
-	}
-
-	div.left ul {
-    	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	margin-top: 10px;
-	}	 
-
-	.left li a {
-		display: block;
-    	line-height: 30px;
-    	margin-top: -5px;
-    	float: none;
-    	font-size: 40px;
-    	padding: 0px;
-	}
-
-	.container p {
-		font-size: 40px;
-		font-family: "MaisonNeue";
-	}
-
-	div.left p {
-		line-height: 70px;
-	}
-
-	.span {
-		font-size: 40px;
-		margin-bottom: 25px;
-		margin-top: 0px;
+		margin-top: 15px;
 	}
 
     div.left {
         margin: 0 auto;
         width: 92.5%;
         padding: 7.5%;
+        font
     }
-
     div.right {
     	margin: 0 auto;
         width: 92.5%;
         padding: 7.5%;
         float: left;
     }
+	#f-left {
+    	max-width: 35%;
+    	float: left;
+	}
+	#f-right {
+    	max-width: 30%;
+    	float: right;
+    	text-align: right;
+    	padding-right: 0px;
+	}
 }
+
