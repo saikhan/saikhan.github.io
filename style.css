@@ -187,13 +187,13 @@ div.left ul {
 }
 
 .container {
-	animation-duration: 0.5s;
+	animation-duration: 0.8s;
 	transition-timing-function: ease-in;
 	animation-name: fadeInUp;
 }
 
 header {
-	animation-duration: 0.5s;
+	animation-duration: 0.8s;
 	transition-timing-function: ease-in;
 	animation-name: fadeIn;
 }
