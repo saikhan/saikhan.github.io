@@ -234,6 +234,84 @@ header {
 /* mobile */
 
 @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    * {
+		letter-spacing: 0.8px;
+		font-size: 40px;
+	}
+	
+	.logo {
+		margin-top: 80px;
+		width: 49%;
+	}
+
+	.title {
+		margin-top: -20px;
+		width: 100%;
+    }
+	
+    li a {
+		font-size: 40px;
+		float: left;
+		display: inline;
+		padding-right: 30px;
+		padding-left: 30px;
+		margin-top: 47px;
+	}
+
+	p a {
+		font-size: 40px;
+	}
+
+	div.left ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	margin-top: 10px;
+	}	 
+
+	.left li a {
+		display: block;
+    	line-height: 30px;
+    	margin-top: -5px;
+    	float: none;
+    	font-size: 40px;
+    	padding: 0px;
+	}
+
+	.container p {
+		font-size: 40px;
+		font-family: "MaisonNeue";
+	}
+
+	div.left p {
+		line-height: 70px;
+	}
+
+	.span {
+		font-size: 40px;
+		margin-bottom: 25px;
+		margin-top: 0px;
+	}
+
+    div.left {
+        margin: 0 auto;
+        width: 92.5%;
+        padding: 1% 7.5% 7.5% 7.5%;
+    }
+
+    div.right {
+    	margin: 0 auto;
+        width: 92.5%;
+        padding: 1% 7.5% 7.5% 7.5%;
+        float: left;
+    }
+}
+
+
+@media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
@@ -309,3 +387,4 @@ header {
         float: left;
     }
 }
+
