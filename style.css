@@ -115,7 +115,7 @@ div.left ul {
     color: #FFFFFF;
 }
 
-li a:hover {
+.left li a:hover {
 	color: #aaaaaa;
 	transition: all 200ms ease-out;
 }
