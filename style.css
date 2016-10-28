@@ -258,6 +258,7 @@ header {
   and (-webkit-min-device-pixel-ratio: 2) { 
 	h1 {
 		font-size: 45px;
+		font-family: "MaisonNeue";
 		width: 100%;
 		margin-top: 10%;
 		margin-bottom: 0.5%;
@@ -265,13 +266,14 @@ header {
 
 	h2 {
 		font-size: 45px;
+		font-family: "MaisonNeue";
 		width: 100%;
 		float: left;
 		margin-bottom: 5%;
     }
 	
 	p {
-		font-size: 30px;
+		font-size: 45px;
 	}
 
     li a {
