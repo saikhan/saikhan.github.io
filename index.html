@@ -8,27 +8,42 @@
 <body>
 <div class="wrapper about">
 	<header id="nav">
-		<p class="logo">Tulga Enhsaihan</p>
+		<h1>Tulga Enhsaihan</h1>
 		<ul>
 			<li><a href="index.html">Work</a></li>
 			<li><a href="tulgbout.html" class="active">About</a></li>
 		</ul>
-		<p class="title">Product Designer</p>
+		<h2>Product Designer</h2>
 	</header>
 
 	<div class="container" id="main">
 	<div class="left">
-  		<p> Tulga is a New York-based product designer, currently working at <a href="http://fuzzproductions.com">Fuzz Productions</a>. He has studied UX Design at <a href="https://generalassemb.ly/">General Assembly</a> and has worked in the fields of UX/UI and Interaction Design for the past two years. He is passionate about designing clean, minimal user interfaces and engaging interactive experiences that push technological and aesthetic boundaries. On his downtime, you can find him playing soccer for his club, <a href="http://www.zumschneider.com/zum-schneider-fc/">Zum Schneider FC.</a></p>
+  		<p> Tulga is a New York-based product designer, currently working at <a href="http://fuzzproductions.com" target="_blank">Fuzz Productions<img src="images/fuzz.png"/></a>. He has studied UX Design at <a href="https://generalassemb.ly/" target="_blank">General Assembly<img src="images/ga.png"/></a> and has worked in the fields of UX/UI and Interaction Design for the past two years. He is passionate about designing clean, minimal user interfaces and engaging interactive experiences that push technological and aesthetic boundaries. On his downtime, you can find him playing soccer for his club, <a href="http://www.zumschneider.com/zum-schneider-fc/" target="_blank">Zum Schneider FC.<img src="images/zs.png"/></a></p>
   		<br>
   		<p class="span">Get In Touch</p>
   		<ul>
-			<li><a href="mailto:hello@tulga.io?Subject=Hello" target="_top">Email</a></li>
-			<li><a href="https://twitter.com/tulgaaa_" target="_blank">Twitter</a></li>
-			<li><a href="https://www.instagram.com/saikhan/" target="_blank">Instagram</a></li>
-			<li><a href="http://tulgaaa.tumblr.com/" target="_blank">Tumblr</a></li>
+			<li><a href="mailto:hello@tulga.io?Subject=Hello" target="_top">Email<img src="images/mail.png"/></a></li>
+			<li><a href="https://twitter.com/tulgaaa_" target="_blank">Twitter<img src="images/twitter.png"/></a></li>
+			<li><a href="https://www.instagram.com/saikhan/" target="_blank">Instagram<img src="images/instagram.png"/></a></li>
+			<li><a href="http://tulgaaa.tumblr.com/" target="_blank">Tumblr<img src="images/tumblr.png"/></a></li>
 		</ul>
 	</div>
 </div>
+
+<script>
+    var elements = document.getElementsByTagName('a');
+     if (!is_touch_device()) {
+            for(var i = 0, len = elements.length; i < len; i++) {
+                elements[i].onmouseover = function () {document.body.className = 'show';}
+                elements[i].onmouseout = function () {document.body.className = '';}
+            } 
+    } 
+
+    function is_touch_device() {
+      return 'ontouchstart' in window        // works on most browsers 
+          || navigator.maxTouchPoints;       // works on IE10/11 and Surface
+    };
+</script>
 
 </body>
 </head>
