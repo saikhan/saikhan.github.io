@@ -194,70 +194,7 @@ header {
   and (max-device-width: 568px) 
   and (-webkit-min-device-pixel-ratio: 2) {
 	h1 {
-		font-size: 50px;
-		width: 100%;
-		margin-top: 10%;
-		margin-bottom: 0.5%;
-	}
-
-	h2 {
-		font-size: 50px;
-		width: 100%;
-		float: left;
-		margin-bottom: 5%;
-    }
-	
-	p {
-		font-size: 30px;
-	}
-
-    li a {
-		font-size: 40px;
-		float: left;
-		display: inline;
-		padding-right: 30px;
-		padding-left: 30px;
-		margin-top: 47px;
-	}
-
-    div.left {
-        margin: 0 auto;
-        width: 92.5%;
-        padding: 1% 7.5% 7.5% 7.5%;
-    }
-
-	div.left p {
-		line-height: 90px;
-	}
-
-	div.left ul {
-    	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	margin-top: 10px;
-	}	 
-
-	.left li a {
-		display: block;
-    	line-height: 80px;
-    	margin-top: -5px;
-    	float: none;
-    	font-size: 50px;
-    	padding: 0px;
-	}
-
-	.span {
-		margin-bottom: 25px;
-		margin-top: 0px;
-	}
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-	h1 {
-		font-family: "MaisonNeue";
+		font-weight: normal;
 		font-size: 45px;
 		width: 100%;
 		margin-top: 10%;
@@ -265,7 +202,7 @@ header {
 	}
 
 	h2 {
-		font-family: "MaisonNeue";
+		font-weight: normal;
 		font-size: 45px;
 		width: 100%;
 		float: left;
@@ -317,3 +254,67 @@ header {
 	}
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	h1 {
+		font-weight: normal;
+		font-size: 45px;
+		width: 100%;
+		margin-top: 10%;
+		margin-bottom: 0.5%;
+	}
+
+	h2 {
+		font-weight: normal;
+		font-size: 45px;
+		width: 100%;
+		float: left;
+		margin-bottom: 5%;
+    }
+	
+	p {
+		font-size: 45px;
+	}
+
+    li a {
+		font-size: 40px;
+		float: left;
+		display: inline;
+		padding-right: 30px;
+		padding-left: 30px;
+		margin-top: 47px;
+	}
+
+    div.left {
+        margin: 0 auto;
+        width: 92.5%;
+        padding: 1% 7.5% 7.5% 7.5%;
+    }
+
+	div.left p {
+		line-height: 80px;
+	}
+
+	div.left ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	margin-top: 10px;
+	}	 
+
+	.left li a {
+		display: block;
+    	line-height: 70px;
+    	margin-top: -5px;
+    	float: none;
+    	font-size: 45px;
+    	padding: 0px;
+	}
+
+	.span {
+		margin-bottom: 25px;
+		margin-top: 0px;
+	}
+}
