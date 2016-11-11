@@ -19,6 +19,7 @@ body {
 
 h1 {
 	font-size: 16px;
+	font-weight: normal;
 	width: 40%;
 	float: left;
 	margin-left: 7.5%; 
@@ -30,6 +31,7 @@ h1 {
 
 h2 {
 	font-size: 16px;
+	font-weight: normal;
 	width: 40%;
 	margin-bottom: 24px;
 	color: #9d9d9d;
